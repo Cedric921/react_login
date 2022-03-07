@@ -1,5 +1,5 @@
 .App{
-  margin: 20vh auto;
+  margin: 10vh auto;
   padding: 20px;
   background-color: beige;
   width: 60%;
@@ -9,7 +9,7 @@
 
 /* blog input */
 .App .formGroup{
-  width: 99%;
+  max-width: 99%;
   padding: 10px;
 }
 
@@ -40,9 +40,9 @@ a{
 .App input {
   background-color: rgb(226, 218, 208);
   color: rgb(172, 159, 166);
-  width: 90%;
+  width: 95%;
   border: none;
-  margin: 0;
+  margin: auto;
   padding: 10px;
 }
 
@@ -65,9 +65,28 @@ a{
 @media  screen and (max-width: 768px) {
   .App{
     flex-direction: column-reverse;
-    padding: 0px;
+    padding: 10px;
+    width: 90%;
+    margin:auto;
   }
   .log{
+    width: auto;
+  }
+  .image{
+    padding: 40px 0 0 0;
+  }
+  .App .btn1{
     width: 100%;
+    margin: 30px auto;
+  }
+  .App .btn2{
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media  screen and (max-width: 768px){
+  .image {
+    width: 35%;
   }
 }

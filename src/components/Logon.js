@@ -4,7 +4,7 @@ const Logon = ({onLogon}) => {
    const [name, setName] = useState("name");
    const [email, setEmail] = useState('email');
    const [phone, setPhone] = useState('phone');
-   const [term, setTerm] = useState(false);
+   const [term, setTerm] = useState('');
 
   return (
     <div className='log'>
@@ -36,7 +36,7 @@ const Logon = ({onLogon}) => {
         </div>
         <div className='formGroup'>
           <input type='submit' value='Register' className='btn1' />
-          <a href='#' className='btn2'>
+          <a href='/' className='btn2'>
             Login
           </a>
         </div>
@@ -45,7 +45,7 @@ const Logon = ({onLogon}) => {
                name={term} id='term'
                onChange={(e) => setTerm(e.currentTarget.checked)}
             />
-          <label htmlFor='term' className='term'>I agree to the term and conditions of <a href="">Privacy & policy</a> </label>
+          <label htmlFor='term' className='term'>I agree to the term and conditions of <a href="/">Privacy & policy</a> </label>
         </div>
       </form>
     </div>

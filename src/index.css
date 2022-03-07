@@ -31,6 +31,10 @@ code {
   max-width: 100%;
   display: block;
 }
-
+@media  screen and (max-width: 768px){
+  .log h3{
+    text-align: center;
+  }
+}
 
 
