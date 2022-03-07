@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  margin: 20vh auto;
+  padding: 20px;
+  background-color: beige;
+  width: 60%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* blog input */
+.App .formGroup{
+  width: 99%;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App  .btn2{
+  display: inline-block;
+  width: 48%;
+  text-align: right;
+
+}
+
+a{
+  text-decoration: none;
+  color: rgb(253, 1, 106);
+}
+
+#term{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  color: rgb(253, 1, 106);
+  background-color: rgb(253, 1, 106);
+}
+.term{
+  font-size: 14px;
+}
+
+.App input {
+  background-color: rgb(226, 218, 208);
+  color: rgb(172, 159, 166);
+  width: 90%;
+  border: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.App .btn1 {
+  background-color: rgb(253, 1, 106);
+  display: inline-block;
+  width: 48%;
+  color: aliceblue;
+}
+
+
+
+.App p{
+  background-color: rgb(85, 95, 95);
+}
+
+/* blog svg*/
+
+
+@media  screen and (max-width: 768px) {
+  .App{
+    flex-direction: column-reverse;
+    padding: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  .log{
+    width: 100%;
   }
 }
