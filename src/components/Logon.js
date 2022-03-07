@@ -30,10 +30,10 @@ const Logon = ({onLogon}) => {
         <div className='formGroup'>
           <label htmlFor='phone'>Phone</label>
           <input type='tel'
-                 name={phone} id='phone'
-                 value={phone}
-               onChange={(e) => setPhone(e.currentTarget.value)}
-            />
+            name={phone} id='phone'
+            value={phone}
+            onChange={(e) => setPhone(e.currentTarget.value)}
+          />
         </div>
         <div className='formGroup'>
           <input type='submit' value='Register' className='btn1' />
