@@ -1,4 +1,5 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
    const [email, setEmail] = useState('email');
@@ -9,17 +10,25 @@ const Login = () => {
       <form>
         <div className='formGroup'>
           <label htmlFor='email'>Email</label>
-          <input type='email' name={email} id='email' />
+          <input type='email'
+            name={email} id='email'
+            value={email}
+            onChange={setEmail}
+          />
         </div>
         <div className='formGroup'>
           <label htmlFor='phone'>Phone</label>
-          <input type='tel' name={phone} id='phone' />
+          <input type='tel'
+            name={phone} id='phone'
+            value={phone}
+            onChange={setPhone}
+          />
         </div>
         <div className='formGroup'>
           <input type='submit' value='Login' className='btn1' />
-          <a href='#' className='btn2'>
+          <Link to='/' className='btn2'>
             Register
-          </a>
+          </Link>
         </div>
       </form>
     </div>

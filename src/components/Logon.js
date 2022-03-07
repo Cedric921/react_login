@@ -1,4 +1,5 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Logon = ({onLogon}) => {
    const [name, setName] = useState("name");
@@ -36,9 +37,9 @@ const Logon = ({onLogon}) => {
         </div>
         <div className='formGroup'>
           <input type='submit' value='Register' className='btn1' />
-          <a href='/' className='btn2'>
+          <Link to='/login' className='btn2'>
             Login
-          </a>
+          </Link>
         </div>
         <div className='formGroup'>
             <input type='checkbox'
