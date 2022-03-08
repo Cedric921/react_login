@@ -6,10 +6,6 @@ import Logon from './components/Logon';
 import ImageBg from './assets/login.svg';
 
 function App() {
-  const logon = (e) => {
-    e.preventDefault()
-    console.log(e)
-  }
 
   return (
     <div className='App'>
