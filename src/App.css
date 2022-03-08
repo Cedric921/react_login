@@ -1,4 +1,4 @@
-.App{
+.App {
   margin: 10vh auto;
   padding: 20px;
   background-color: beige;
@@ -8,24 +8,23 @@
 }
 
 /* blog input */
-.App .formGroup{
+.App .formGroup {
   max-width: 99%;
   padding: 10px;
 }
 
-.App  .btn2{
+.App .btn2 {
   display: inline-block;
   width: 48%;
   text-align: right;
-
 }
 
-a{
+a {
   text-decoration: none;
   color: rgb(253, 1, 106);
 }
 
-#term{
+#term {
   display: inline-block;
   padding: 0;
   margin: 0;
@@ -33,7 +32,7 @@ a{
   color: rgb(253, 1, 106);
   background-color: rgb(253, 1, 106);
 }
-.term{
+.term {
   font-size: 14px;
 }
 
@@ -46,6 +45,14 @@ a{
   padding: 10px;
 }
 
+.App TextField {
+  width: 95%;
+  border: none;
+  margin: 10px auto;
+  padding: 10px;
+  display: block;
+}
+
 .App .btn1 {
   background-color: rgb(253, 1, 106);
   display: inline-block;
@@ -53,39 +60,36 @@ a{
   color: aliceblue;
 }
 
-
-
-.App p{
+.App p {
   background-color: rgb(85, 95, 95);
 }
 
 /* blog svg*/
 
-
-@media  screen and (max-width: 768px) {
-  .App{
+@media screen and (max-width: 768px) {
+  .App {
     flex-direction: column-reverse;
     padding: 10px;
     width: 90%;
-    margin:auto;
+    margin: auto;
   }
-  .log{
+  .log {
     width: auto;
   }
-  .image{
+  .image {
     padding: 40px 0 0 0;
   }
-  .App .btn1{
+  .App .btn1 {
     width: 100%;
     margin: 30px auto;
   }
-  .App .btn2{
+  .App .btn2 {
     width: 100%;
     margin: auto;
   }
 }
 
-@media  screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .image {
     width: 35%;
   }

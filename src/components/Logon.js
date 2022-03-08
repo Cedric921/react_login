@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
-//import * from '@mui/material'
 
 const Logon = () => {
   const [name, setName] = useState('name')
   const [email, setEmail] = useState('email')
   const [phone, setPhone] = useState('phone')
-  const [term, setTerm] = useState(false)
+  const [term, setTerm] = useState('false')
 
   const onLogon = (e) => {
     e.preventDefault()
@@ -26,35 +26,40 @@ const Logon = () => {
         <h3>Registration</h3>
         <div className='formGroup'>
           <label htmlFor='name'>First name</label>
-          <input
-            type='text'
-            name={name}
-            value={name}
+          <TextField
+            fullWidth
+            id='name'
+            label='name'
+            variant='outlined'
             onChange={(e) => setName(e.currentTarget.value)}
           />
         </div>
         <div className='formGroup'>
           <label htmlFor='email'>Email</label>
-          <input
-            type='email'
-            name={email}
+          <TextField
+            fullWidth
             id='email'
-            value={email}
+            label='email'
+            variant='outlined'
             onChange={(e) => setEmail(e.currentTarget.value)}
           />
         </div>
         <div className='formGroup'>
           <label htmlFor='phone'>Phone</label>
-          <input
-            type='tel'
-            name={phone}
+          <TextField
+            fullWidth
             id='phone'
-            value={phone}
+            label='phone'
+            variant='outlined'
             onChange={(e) => setPhone(e.currentTarget.value)}
+            inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
           />
         </div>
         <div className='formGroup'>
-          <input type='submit' value='Register' className='btn1' />
+          
+          <Button variant='contained' color='success' className='btn1'>
+            Register
+          </Button>
           <Link to='/login' className='btn2'>
             Login
           </Link>
