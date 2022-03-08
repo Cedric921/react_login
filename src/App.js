@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 import Login from './components/Login';
 import Logon from './components/Logon';
 import ImageBg from './assets/login.svg';
@@ -13,12 +13,10 @@ function App() {
 
   return (
     <div className='App'>
-
-      <Router>
-        <Route path='/' componen={Logon} exact/>
-        <Route path='/login' componen={Login} />
-        <Logon onLogon={logon} />
-      </Router>
+      <Routes>
+        <Route path='/' element={<Logon />} />
+        <Route path='/login' element={<Login />} />
+      </Routes>
 
       <div className='image'>
         <img src={ImageBg} alt='' />

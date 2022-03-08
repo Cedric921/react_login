@@ -6,8 +6,8 @@ const Login = () => {
    const [phone, setPhone] = useState('phone');
   return (
     <div className='log'>
-      <h3>Registration</h3>
       <form>
+        <h3>Registration</h3>
         <div className='formGroup'>
           <label htmlFor='email'>Email</label>
           <input type='email'
